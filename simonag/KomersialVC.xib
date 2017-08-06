@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,7 +17,65 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2wg-wb-zVK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNS-FM-oYu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sistem Informasi Monitoring Program Kerja BUMN untuk Asian Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvj-n9-AQy">
+                                    <rect key="frame" x="8" y="2" width="359" height="46.5"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89859236710000001" green="0.89859236710000001" blue="0.89859236710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Hvj-n9-AQy" secondAttribute="trailing" constant="8" id="1Jl-GB-cxU"/>
+                                <constraint firstItem="Hvj-n9-AQy" firstAttribute="leading" secondItem="lNS-FM-oYu" secondAttribute="leading" constant="8" id="7AL-rQ-j2k"/>
+                                <constraint firstItem="Hvj-n9-AQy" firstAttribute="top" secondItem="lNS-FM-oYu" secondAttribute="top" constant="1.5" id="Anv-FG-oi6"/>
+                                <constraint firstAttribute="trailing" secondItem="Hvj-n9-AQy" secondAttribute="trailing" constant="8" id="HUa-2l-KEn"/>
+                                <constraint firstItem="Hvj-n9-AQy" firstAttribute="leading" secondItem="lNS-FM-oYu" secondAttribute="leading" constant="8" id="bvF-Ad-tUn"/>
+                                <constraint firstAttribute="bottom" secondItem="Hvj-n9-AQy" secondAttribute="bottom" constant="1.5" id="ryx-u8-0Cl"/>
+                                <constraint firstAttribute="height" constant="50" id="wLD-Rp-YBM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="epi-60-5gg"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah BUMN: 28 | Jumlah Program: 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ak-jW-G5L">
+                    <rect key="frame" x="85.5" y="58" width="205" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="N5G-bl-Dpd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KOMERSIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhC-4Z-1eM">
+                    <rect key="frame" x="145.5" y="87" width="85" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="xqM-qY-GDd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2wg-wb-zVK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7ks-Ow-IB8"/>
+                <constraint firstItem="lhC-4Z-1eM" firstAttribute="top" secondItem="0Ak-jW-G5L" secondAttribute="bottom" constant="8" id="Icg-Pd-ryQ"/>
+                <constraint firstItem="2wg-wb-zVK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TrS-yp-cUR"/>
+                <constraint firstItem="0Ak-jW-G5L" firstAttribute="top" secondItem="2wg-wb-zVK" secondAttribute="bottom" constant="8" id="d9e-mj-N4j"/>
+                <constraint firstAttribute="trailing" secondItem="2wg-wb-zVK" secondAttribute="trailing" id="rha-yA-YOf"/>
+                <constraint firstItem="0Ak-jW-G5L" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x47-de-xo2"/>
+                <constraint firstItem="lhC-4Z-1eM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xGy-Fi-4i8"/>
+            </constraints>
         </view>
     </objects>
 </document>

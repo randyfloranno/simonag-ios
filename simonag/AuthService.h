@@ -10,4 +10,13 @@
 
 @interface AuthService : NSObject
 
+@property (nonatomic, assign) BOOL isAuthenticated;
+@property (nonatomic, retain) NSString* _Nonnull idusr;
+@property (nonatomic, retain) NSString* _Nonnull authToken;
+
++ (nullable id) instance;
+- (void) loginUser:(NSString* _Nonnull)username :(NSString* _Nonnull)password completion:(void (^ _Nonnull)(BOOL))completionBlock;
+
+- (void) forgotPassword:(NSString* _Nonnull)email completion:(void (^ _Nonnull)(BOOL))completionBlock;
+
 @end

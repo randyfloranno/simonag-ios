@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KualitasVC">
             <connections>
+                <outlet property="jumlahBUMNdanJumlahProgram" destination="KFv-FN-9hZ" id="YiQ-Xb-L81"/>
+                <outlet property="kualitasTableView" destination="whK-gq-LKb" id="sS0-XT-wbs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +19,74 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KUALITAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxg-Oj-vAE">
+                    <rect key="frame" x="153.5" y="87" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VcK-cS-Jli"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dvK-iZ-ljk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bas-RF-Lfk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sistem Informasi Monitoring Program Kerja BUMN untuk Asian Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfd-QW-XpT">
+                                    <rect key="frame" x="8" y="2" width="359" height="46.5"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89859236708752399" green="0.89859236708752399" blue="0.89859236708752399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Tfd-QW-XpT" secondAttribute="bottom" constant="1.5" id="6IA-Gg-Xrg"/>
+                                <constraint firstAttribute="height" constant="50" id="Ixe-Ka-PVv"/>
+                                <constraint firstAttribute="trailing" secondItem="Tfd-QW-XpT" secondAttribute="trailing" constant="8" id="Rgf-RV-v9y"/>
+                                <constraint firstItem="Tfd-QW-XpT" firstAttribute="leading" secondItem="bas-RF-Lfk" secondAttribute="leading" constant="8" id="XeY-X6-SWb"/>
+                                <constraint firstItem="Tfd-QW-XpT" firstAttribute="top" secondItem="bas-RF-Lfk" secondAttribute="top" constant="1.5" id="qKO-T2-nuz"/>
+                                <constraint firstItem="Tfd-QW-XpT" firstAttribute="leading" secondItem="bas-RF-Lfk" secondAttribute="leading" constant="8" id="qgQ-Xl-24a"/>
+                                <constraint firstAttribute="trailing" secondItem="Tfd-QW-XpT" secondAttribute="trailing" constant="8" id="tle-5v-WPi"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5Da-Kn-M0F"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah BUMN: 0 | Jumlah Program: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFv-FN-9hZ">
+                    <rect key="frame" x="89" y="58" width="198.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="pa3-sH-NZv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="whK-gq-LKb">
+                    <rect key="frame" x="8" y="116" width="359" height="501"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="whK-gq-LKb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="GoR-nA-M2p"/>
+                <constraint firstAttribute="trailing" secondItem="whK-gq-LKb" secondAttribute="trailing" constant="8" id="ICR-rR-7x7"/>
+                <constraint firstAttribute="bottom" secondItem="whK-gq-LKb" secondAttribute="bottom" constant="50" id="ML7-Mp-14o"/>
+                <constraint firstItem="zxg-Oj-vAE" firstAttribute="top" secondItem="KFv-FN-9hZ" secondAttribute="bottom" constant="8" id="QMk-qn-3ky"/>
+                <constraint firstItem="zxg-Oj-vAE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vza-jr-lDl"/>
+                <constraint firstItem="KFv-FN-9hZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WTh-SX-7WR"/>
+                <constraint firstItem="dvK-iZ-ljk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hB5-iI-xJj"/>
+                <constraint firstAttribute="trailing" secondItem="dvK-iZ-ljk" secondAttribute="trailing" id="jXH-Ss-xO0"/>
+                <constraint firstItem="KFv-FN-9hZ" firstAttribute="top" secondItem="dvK-iZ-ljk" secondAttribute="bottom" constant="8" id="jj2-lU-uDp"/>
+                <constraint firstItem="dvK-iZ-ljk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oMP-GA-Clf"/>
+                <constraint firstItem="whK-gq-LKb" firstAttribute="top" secondItem="zxg-Oj-vAE" secondAttribute="bottom" constant="8" id="xpS-mi-mYe"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
     </objects>
 </document>

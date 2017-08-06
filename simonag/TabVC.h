@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RESideMenu.h>
 
-@interface TabVC : UITabBarController
+#import "KualitasVC.h"
+#import "KapasitasVC.h"
+#import "KomersialVC.h"
+
+@interface TabVC : UITabBarController {
+    NSArray *dashboardList;
+}
 
 @end

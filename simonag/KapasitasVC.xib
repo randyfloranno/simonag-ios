@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,7 +17,65 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8EE-Ku-sdF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57y-3v-3g3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sistem Informasi Monitoring Program Kerja BUMN untuk Asian Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UET-oX-WIo">
+                                    <rect key="frame" x="8" y="2" width="359" height="46.5"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89859236710000001" green="0.89859236710000001" blue="0.89859236710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="UET-oX-WIo" firstAttribute="leading" secondItem="57y-3v-3g3" secondAttribute="leading" constant="8" id="Bgk-SA-fbK"/>
+                                <constraint firstAttribute="bottom" secondItem="UET-oX-WIo" secondAttribute="bottom" constant="1.5" id="O62-GX-KeL"/>
+                                <constraint firstItem="UET-oX-WIo" firstAttribute="top" secondItem="57y-3v-3g3" secondAttribute="top" constant="1.5" id="OHk-Xs-cOI"/>
+                                <constraint firstItem="UET-oX-WIo" firstAttribute="leading" secondItem="57y-3v-3g3" secondAttribute="leading" constant="8" id="U5v-2L-O0y"/>
+                                <constraint firstAttribute="trailing" secondItem="UET-oX-WIo" secondAttribute="trailing" constant="8" id="fEZ-Fi-b8c"/>
+                                <constraint firstAttribute="height" constant="50" id="oNb-ji-2QJ"/>
+                                <constraint firstAttribute="trailing" secondItem="UET-oX-WIo" secondAttribute="trailing" constant="8" id="yHQ-7h-VfY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uwe-gg-b6G"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAPASITAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldz-kO-UlG">
+                    <rect key="frame" x="149.5" y="87" width="77.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="XNm-0z-rYk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah BUMN: 28 | Jumlah Program: 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM0-F5-8eK">
+                    <rect key="frame" x="85.5" y="58" width="205" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="NLv-kg-Tmf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8EE-Ku-sdF" secondAttribute="trailing" id="4xq-bs-uab"/>
+                <constraint firstItem="WM0-F5-8eK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dbt-BZ-tKt"/>
+                <constraint firstItem="ldz-kO-UlG" firstAttribute="top" secondItem="WM0-F5-8eK" secondAttribute="bottom" constant="8" id="FgG-8b-JS6"/>
+                <constraint firstItem="8EE-Ku-sdF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qih-qI-MOl"/>
+                <constraint firstItem="8EE-Ku-sdF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="asN-hK-nUO"/>
+                <constraint firstItem="ldz-kO-UlG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dii-Pg-gIu"/>
+                <constraint firstItem="WM0-F5-8eK" firstAttribute="top" secondItem="8EE-Ku-sdF" secondAttribute="bottom" constant="8" id="ezF-FW-Nhi"/>
+            </constraints>
         </view>
     </objects>
 </document>

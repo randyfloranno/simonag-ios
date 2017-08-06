@@ -7,15 +7,21 @@
 //
 
 #import "SquareButton.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation SquareButton
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    self.layer.borderColor = [[UIColor grayColor] CGColor];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 }
-*/
+
+- (void) layoutSubviews {
+    [super layoutSubviews];
+    
+    self.layer.cornerRadius = self.frame.size.height / 8;
+}
 
 @end

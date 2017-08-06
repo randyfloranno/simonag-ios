@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressAktifitasVC">
             <connections>
+                <outlet property="imageView" destination="fmN-x8-tIQ" id="1ya-Pb-toP"/>
+                <outlet property="programLabel" destination="YOK-CH-yaz" id="kjc-7U-PBP"/>
+                <outlet property="tableView" destination="ZgE-Si-DvE" id="vUf-F5-4Le"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,41 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fmN-x8-tIQ">
+                    <rect key="frame" x="164" y="8" width="46" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="YZh-zs-6hF"/>
+                        <constraint firstAttribute="width" constant="46" id="q4t-Vp-8cj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Program: Penyediaan alokasi parkir khusus" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOK-CH-yaz">
+                    <rect key="frame" x="8" y="62" width="359" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="8w2-a5-enj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZgE-Si-DvE">
+                    <rect key="frame" x="8" y="118" width="359" height="541"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fmN-x8-tIQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="2in-A4-4iG"/>
+                <constraint firstItem="YOK-CH-yaz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="JVp-5v-ENV"/>
+                <constraint firstItem="ZgE-Si-DvE" firstAttribute="top" secondItem="YOK-CH-yaz" secondAttribute="bottom" constant="8" id="NTh-U7-TWa"/>
+                <constraint firstAttribute="trailing" secondItem="YOK-CH-yaz" secondAttribute="trailing" constant="8" id="S13-be-Efa"/>
+                <constraint firstAttribute="bottom" secondItem="ZgE-Si-DvE" secondAttribute="bottom" constant="8" id="SvP-NL-S7M"/>
+                <constraint firstItem="ZgE-Si-DvE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="UXO-Kk-j7B"/>
+                <constraint firstItem="YOK-CH-yaz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bib-cg-SxP"/>
+                <constraint firstItem="YOK-CH-yaz" firstAttribute="top" secondItem="fmN-x8-tIQ" secondAttribute="bottom" constant="8" id="gAs-n6-m7U"/>
+                <constraint firstItem="fmN-x8-tIQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="llY-p9-gvt"/>
+                <constraint firstAttribute="trailing" secondItem="ZgE-Si-DvE" secondAttribute="trailing" constant="8" id="qjw-zb-hCZ"/>
+            </constraints>
         </view>
     </objects>
 </document>

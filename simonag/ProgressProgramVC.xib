@@ -1,20 +1,57 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressProgramVC">
             <connections>
+                <outlet property="imageView" destination="Dor-0h-RCa" id="Cpn-i4-tSP"/>
+                <outlet property="tableView" destination="EOZ-r5-IoQ" id="a05-mw-Hkg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-0h-RCa">
+                    <rect key="frame" x="137" y="8" width="46" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="OJQ-gI-w8l"/>
+                        <constraint firstAttribute="height" constant="46" id="ohm-n2-m6P"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daftar Program" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zW9-3f-7P8">
+                    <rect key="frame" x="98" y="62" width="124" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="OLN-Ta-PQd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EOZ-r5-IoQ">
+                    <rect key="frame" x="8" y="94" width="304" height="378"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EOZ-r5-IoQ" firstAttribute="top" secondItem="zW9-3f-7P8" secondAttribute="bottom" constant="8" id="41V-J4-1qP"/>
+                <constraint firstItem="EOZ-r5-IoQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7mE-S9-g4X"/>
+                <constraint firstAttribute="bottom" secondItem="EOZ-r5-IoQ" secondAttribute="bottom" constant="8" id="LH9-Ix-MNo"/>
+                <constraint firstItem="zW9-3f-7P8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NMO-3T-ufF"/>
+                <constraint firstAttribute="trailing" secondItem="EOZ-r5-IoQ" secondAttribute="trailing" constant="8" id="P6m-a9-8xf"/>
+                <constraint firstItem="Dor-0h-RCa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X3R-iM-haU"/>
+                <constraint firstItem="zW9-3f-7P8" firstAttribute="top" secondItem="Dor-0h-RCa" secondAttribute="bottom" constant="8" id="Ydb-Vc-eg8"/>
+                <constraint firstItem="Dor-0h-RCa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="n36-Bg-sAJ"/>
+            </constraints>
         </view>
     </objects>
 </document>

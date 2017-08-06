@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RESideMenu.h>
 
-@interface AddProgramVC : UIViewController
+@class Dashboard;
+
+@interface AddProgramVC : UIViewController <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource> {
+    NSArray *programPerusahaanList;
+}
 
 @end

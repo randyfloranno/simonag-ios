@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProgressProgramVC : UIViewController
+@class Dashboard;
+
+@interface ProgressProgramVC : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *programPerusahaanList;
+}
+
+@property (nonatomic,strong) Dashboard* _Nullable dashboard;
 
 @end

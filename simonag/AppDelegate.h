@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import <RESideMenu.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RESideMenuDelegate, UITabBarControllerDelegate, UITabBarDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 

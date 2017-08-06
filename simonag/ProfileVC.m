@@ -14,24 +14,25 @@
 
 @implementation ProfileVC
 
+//- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    
+//    if([self isKindOfClass:[ProfileVC class]]) {
+//        //set the tab bar item's title
+//        self.tabBarItem.title = @"Profile";
+//        
+//        //create a UIImage from a file
+//        UIImage *image = [UIImage imageNamed:@"home-tabbar-icon"];
+//        
+//        //put that image on the tab bar item
+//        self.tabBarItem.image = image;
+//    }
+//    return self;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

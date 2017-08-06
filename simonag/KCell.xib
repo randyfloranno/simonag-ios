@@ -1,19 +1,81 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" userLabel="KCell" customClass="KCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xyo-4P-1e0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-icon" translatesAutoresizingMaskIntoConstraints="NO" id="nyU-bn-OkG">
+                                <rect key="frame" x="8" y="8" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="02k-NL-gl2"/>
+                                    <constraint firstAttribute="width" constant="46" id="DBh-au-o6P"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FY8-4w-P6w">
+                                <rect key="frame" x="66" y="30" width="246" height="2"/>
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="KPN-Rb-roK"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRF-C8-E9w">
+                                <rect key="frame" x="144" y="8" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zhW-BN-7Tz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FY8-4w-P6w" firstAttribute="top" secondItem="vRF-C8-E9w" secondAttribute="bottom" constant="1" id="2Zt-eM-tzm"/>
+                            <constraint firstAttribute="height" constant="61.5" id="3qg-qw-Kbk"/>
+                            <constraint firstItem="vRF-C8-E9w" firstAttribute="top" secondItem="Xyo-4P-1e0" secondAttribute="top" constant="8" id="5de-NB-X3V"/>
+                            <constraint firstAttribute="trailing" secondItem="FY8-4w-P6w" secondAttribute="trailing" constant="8" id="AJD-MM-nn3"/>
+                            <constraint firstItem="nyU-bn-OkG" firstAttribute="leading" secondItem="Xyo-4P-1e0" secondAttribute="leading" constant="8" id="FRE-d8-ElW"/>
+                            <constraint firstAttribute="bottom" secondItem="FY8-4w-P6w" secondAttribute="bottom" constant="29.5" id="Vy7-Jg-Vre"/>
+                            <constraint firstItem="FY8-4w-P6w" firstAttribute="top" secondItem="Xyo-4P-1e0" secondAttribute="top" constant="30" id="eHf-pw-G3O"/>
+                            <constraint firstItem="vRF-C8-E9w" firstAttribute="leading" secondItem="nyU-bn-OkG" secondAttribute="trailing" constant="90" id="h1f-sG-xkQ"/>
+                            <constraint firstItem="nyU-bn-OkG" firstAttribute="top" secondItem="Xyo-4P-1e0" secondAttribute="top" constant="8" id="l8Z-nc-qEG"/>
+                            <constraint firstItem="FY8-4w-P6w" firstAttribute="leading" secondItem="Xyo-4P-1e0" secondAttribute="leading" constant="66" id="tFx-jO-6M5"/>
+                            <constraint firstAttribute="trailing" secondItem="vRF-C8-E9w" secondAttribute="trailing" constant="86" id="ych-V5-kZf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xyo-4P-1e0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2Sf-vF-Zgw"/>
+                    <constraint firstAttribute="trailing" secondItem="Xyo-4P-1e0" secondAttribute="trailing" id="VQr-y7-sed"/>
+                    <constraint firstItem="Xyo-4P-1e0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WWR-8i-i3H"/>
+                    <constraint firstAttribute="bottom" secondItem="Xyo-4P-1e0" secondAttribute="bottom" id="Wt5-7b-ZXD"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="nyU-bn-OkG" id="2pB-ks-lYK"/>
+                <outlet property="percentageValue" destination="vRF-C8-E9w" id="8j0-ED-oJk"/>
+                <outlet property="progressView" destination="FY8-4w-P6w" id="rje-0v-4cY"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="87"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="empty-icon" width="32" height="32"/>
+    </resources>
 </document>

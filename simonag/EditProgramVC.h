@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProgramPerusahaan.h"
 
-@interface EditProgramVC : UIViewController
+@interface EditProgramVC : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic,strong) ProgramPerusahaan * _Nonnull programPerusahaan;
 
 @end

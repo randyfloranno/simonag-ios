@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KualitasVC : UIViewController
+@interface KualitasVC : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *dashboardList;
+}
 
 @end

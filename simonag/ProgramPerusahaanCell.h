@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ProgramPerusahaanCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *namaProgramLabel;
+@property (strong, nonatomic) IBOutlet UIButton *detailBtn;
 
 @end

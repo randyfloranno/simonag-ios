@@ -7,8 +7,21 @@
 //
 
 #import "TabVC.h"
+#import "DataService.h"
+#import "LoginVC.h"
+#import "Dashboard.h"
+#import <SVProgressHUD.h>
+#import <MBProgressHUD.h>
 
-@interface TabVC ()
+@interface TabVC () {
+    NSString *id_role;
+    NSString *id_tipe;
+    NSString *id_perusahaanStr;
+    NSNumber *id_perusahaanInt;
+    NSString *authToken;
+    NSString *nama;
+    NSString *foto;
+}
 
 @end
 
@@ -17,21 +30,104 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"Pencapaian 3K";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"sidemenu-icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:@selector(presentLeftMenuViewController:)];
+    //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Right"
+    //                                                                              style:UIBarButtonItemStylePlain
+    //                                                                             target:self
+    //                                                                             action:@selector(presentRightMenuViewController:)];
+    
+    //    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    //    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    //    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    //    imageView.image = [UIImage imageNamed:@"Balloon"];
+    //    [self.view addSubview:imageView];
+    
+//    //tabbar
+//    KualitasVC *kualitasVC = [[KualitasVC alloc] init];
+//    KapasitasVC *kapasitasVC = [[KapasitasVC alloc] init];
+//    KomersialVC *komersialVC = [[KomersialVC alloc] init];
+//    
+//    NSArray *tabViewControllers = @[kualitasVC, kapasitasVC, komersialVC];
+//    
+//    [self setViewControllers:tabViewControllers];
+//    
+//    //
+//    kualitasVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Kualitas" image:nil tag:0];
+//    kapasitasVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Kapasitas" image:nil tag:1];
+//    komersialVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Komersial" image:nil tag:2];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:(BOOL)animated];
+    
+    id_role = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_role"];
+    id_tipe = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_tipe"];
+    id_perusahaanStr = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_perusahaan"];
+    id_perusahaanInt = [NSNumber numberWithInteger: [id_perusahaanStr integerValue]];
+    authToken = [[NSUserDefaults standardUserDefaults] stringForKey:@"authToken"];
+    nama = [[NSUserDefaults standardUserDefaults] stringForKey:@"nama"];
+    foto = [[NSUserDefaults standardUserDefaults] stringForKey:@"foto"];
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        // Do something...
+        
+        [self getDashboardWithToken];
+        
+        // End do something...
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
+    });
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)getDashboardWithToken {
+    //getDashboardWithToken
+    [[DataService instance] getDashboardWithToken:[NSString stringWithFormat:@"/%@", authToken] :^(NSArray * _Nullable dataArray, NSString * _Nullable errMessage) {
+        //NSLog(@"Data array baru neh: %@", dataArray);
+        if ([[dataArray valueForKey:@"status"] isEqual: @"success"]) {
+            //set array dashboard
+            NSMutableArray *arrDashboard = [[NSMutableArray alloc]init];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //tabbar
+                KualitasVC *kualitasVC = [[KualitasVC alloc] init];
+                KapasitasVC *kapasitasVC = [[KapasitasVC alloc] init];
+                KomersialVC *komersialVC = [[KomersialVC alloc] init];
+                
+                NSArray *tabViewControllers = @[kualitasVC, kapasitasVC, komersialVC];
+                
+                [self setViewControllers:tabViewControllers];
+                
+                kualitasVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:[NSString stringWithFormat:@"Kualitas %@%%", [[dashboardList objectAtIndex:0] valueForKey:@"realisasi_persen"]] image:nil tag:0];
+                kapasitasVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:[NSString stringWithFormat:@"Kapasitas %@%%", [[dashboardList objectAtIndex:1] valueForKey:@"realisasi_persen"]] image:nil tag:1];
+                komersialVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:[NSString stringWithFormat:@"Komersial %@%%", [[dashboardList objectAtIndex:2] valueForKey:@"realisasi_persen"]] image:nil tag:2];
+            });
+            
+            for (NSDictionary *dshbrd in [dataArray valueForKey:@"kategori"]) {
+                @autoreleasepool {
+                    Dashboard *dashboard = [[Dashboard alloc]init];
+                    
+                    dashboard.realisasi_persen = [dshbrd objectForKey:@"realisasi_persen"];
+                    
+                    [arrDashboard addObject:dashboard];
+                }
+            }
+            dashboardList = arrDashboard;
+            //[self updateTableData];
+        } else if ([[dataArray valueForKey:@"status"] isEqual: @"invalid-token"]) {
+            LoginVC *loginVC = [[LoginVC alloc] initWithNibName:nil bundle:nil];
+            loginVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [self presentViewController:loginVC animated:YES completion:nil];
+        } else {
+            NSLog(@"Err Message TabVC: %@", errMessage);
+        }
+    }];
 }
-*/
 
 @end

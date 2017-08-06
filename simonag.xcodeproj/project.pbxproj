@@ -7,15 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17853EC734BA092BE158C459 /* libPods-simonagTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 295E270302D305B332E469C4 /* libPods-simonagTests.a */; };
+		422AED3F1F2EC848008DF13D /* ProgramPerusahaanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AED3D1F2EC848008DF13D /* ProgramPerusahaanCell.m */; };
+		422AED401F2EC848008DF13D /* ProgramPerusahaanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422AED3E1F2EC848008DF13D /* ProgramPerusahaanCell.xib */; };
+		422AED441F2ECBFF008DF13D /* AddProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AED421F2ECBFF008DF13D /* AddProgramVC.m */; };
+		422AED451F2ECBFF008DF13D /* AddProgramVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422AED431F2ECBFF008DF13D /* AddProgramVC.xib */; };
+		422AED4B1F2ED12F008DF13D /* SquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AED4A1F2ED12F008DF13D /* SquareButton.m */; };
+		4230C11F1F283D3300232F40 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230C11E1F283D3300232F40 /* DataService.m */; };
+		4230C1221F28454100232F40 /* Dashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230C1211F28454100232F40 /* Dashboard.m */; };
+		4230C1261F2847D700232F40 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230C1241F2847D700232F40 /* LoginVC.m */; };
+		4230C1271F2847D700232F40 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4230C1251F2847D700232F40 /* LoginVC.xib */; };
+		42463F951F22F6AD00CC0419 /* LeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463F931F22F6AD00CC0419 /* LeftMenuVC.m */; };
+		42463F9A1F238D2700CC0419 /* KualitasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463F981F238D2700CC0419 /* KualitasVC.m */; };
+		42463F9B1F238D2700CC0419 /* KualitasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42463F991F238D2700CC0419 /* KualitasVC.xib */; };
+		42463F9F1F238D8600CC0419 /* KapasitasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463F9D1F238D8600CC0419 /* KapasitasVC.m */; };
+		42463FA01F238D8600CC0419 /* KapasitasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42463F9E1F238D8600CC0419 /* KapasitasVC.xib */; };
+		42463FA41F238DA600CC0419 /* KomersialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463FA21F238DA600CC0419 /* KomersialVC.m */; };
+		42463FA51F238DA600CC0419 /* KomersialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42463FA31F238DA600CC0419 /* KomersialVC.xib */; };
+		42463FAE1F24116100CC0419 /* TabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463FAC1F24116100CC0419 /* TabVC.m */; };
+		42463FAF1F24116100CC0419 /* TabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42463FAD1F24116100CC0419 /* TabVC.xib */; };
+		4295C91E1F280F5500880CE9 /* KCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4295C91C1F280F5500880CE9 /* KCell.m */; };
+		4295C91F1F280F5500880CE9 /* KCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4295C91D1F280F5500880CE9 /* KCell.xib */; };
+		42A8BF5C1F369D430017152B /* EditProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A8BF5A1F369D430017152B /* EditProgramVC.m */; };
+		42A8BF5D1F369D430017152B /* EditProgramVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A8BF5B1F369D430017152B /* EditProgramVC.xib */; };
 		42BE9E781F2060AB0097A442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E771F2060AB0097A442 /* main.m */; };
 		42BE9E7B1F2060AB0097A442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E7A1F2060AB0097A442 /* AppDelegate.m */; };
-		42BE9E7E1F2060AB0097A442 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E7D1F2060AB0097A442 /* ViewController.m */; };
-		42BE9E811F2060AB0097A442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BE9E7F1F2060AB0097A442 /* Main.storyboard */; };
 		42BE9E841F2060AB0097A442 /* simonag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E821F2060AB0097A442 /* simonag.xcdatamodeld */; };
 		42BE9E861F2060AB0097A442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42BE9E851F2060AB0097A442 /* Assets.xcassets */; };
 		42BE9E891F2060AB0097A442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BE9E871F2060AB0097A442 /* LaunchScreen.storyboard */; };
 		42BE9E941F2060AB0097A442 /* simonagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E931F2060AB0097A442 /* simonagTests.m */; };
 		42BE9E9F1F2060AB0097A442 /* simonagUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E9E1F2060AB0097A442 /* simonagUITests.m */; };
+		42BE9EB31F2065090097A442 /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9EB11F2065090097A442 /* ProfileVC.m */; };
+		42BE9EB41F2065090097A442 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BE9EB21F2065090097A442 /* ProfileVC.xib */; };
+		42E9FB0A1F2D0CA7002FDF35 /* AuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E9FB091F2D0CA7002FDF35 /* AuthService.m */; };
+		42E9FB0E1F2D11A1002FDF35 /* ForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E9FB0C1F2D11A1002FDF35 /* ForgotPasswordVC.m */; };
+		42E9FB0F1F2D11A1002FDF35 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E9FB0D1F2D11A1002FDF35 /* ForgotPasswordVC.xib */; };
+		42E9FB131F2D83BC002FDF35 /* ProgressProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E9FB111F2D83BC002FDF35 /* ProgressProgramVC.m */; };
+		42E9FB141F2D83BC002FDF35 /* ProgressProgramVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E9FB121F2D83BC002FDF35 /* ProgressProgramVC.xib */; };
+		42E9FB171F2D9186002FDF35 /* ProgramPerusahaan.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E9FB161F2D9186002FDF35 /* ProgramPerusahaan.m */; };
+		42E9FB1B1F2DBD54002FDF35 /* ProgressAktifitasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E9FB191F2DBD54002FDF35 /* ProgressAktifitasVC.m */; };
+		42E9FB1C1F2DBD54002FDF35 /* ProgressAktifitasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E9FB1A1F2DBD54002FDF35 /* ProgressAktifitasVC.xib */; };
+		42E9FB1F1F2DBF53002FDF35 /* TargetProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E9FB1E1F2DBF53002FDF35 /* TargetProgram.m */; };
+		42E9FB231F2E24F6002FDF35 /* TargetProgramCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E9FB211F2E24F6002FDF35 /* TargetProgramCell.m */; };
+		42E9FB241F2E24F6002FDF35 /* TargetProgramCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E9FB221F2E24F6002FDF35 /* TargetProgramCell.xib */; };
+		5D4080573BEAC94C1FF9DD09 /* libPods-simonag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DBFF885A082E501A746380 /* libPods-simonag.a */; };
+		F929439CBC08370259C29E84 /* libPods-simonagUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 652DC512E24F09D41EAF11F9 /* libPods-simonagUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +72,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		295E270302D305B332E469C4 /* libPods-simonagTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-simonagTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		422AED3C1F2EC848008DF13D /* ProgramPerusahaanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramPerusahaanCell.h; sourceTree = "<group>"; };
+		422AED3D1F2EC848008DF13D /* ProgramPerusahaanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramPerusahaanCell.m; sourceTree = "<group>"; };
+		422AED3E1F2EC848008DF13D /* ProgramPerusahaanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgramPerusahaanCell.xib; sourceTree = "<group>"; };
+		422AED411F2ECBFF008DF13D /* AddProgramVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProgramVC.h; sourceTree = "<group>"; };
+		422AED421F2ECBFF008DF13D /* AddProgramVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProgramVC.m; sourceTree = "<group>"; };
+		422AED431F2ECBFF008DF13D /* AddProgramVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProgramVC.xib; sourceTree = "<group>"; };
+		422AED491F2ED12F008DF13D /* SquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareButton.h; sourceTree = "<group>"; };
+		422AED4A1F2ED12F008DF13D /* SquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareButton.m; sourceTree = "<group>"; };
+		4230C11D1F283D3300232F40 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		4230C11E1F283D3300232F40 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		4230C1201F28454100232F40 /* Dashboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dashboard.h; sourceTree = "<group>"; };
+		4230C1211F28454100232F40 /* Dashboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dashboard.m; sourceTree = "<group>"; };
+		4230C1231F2847D700232F40 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		4230C1241F2847D700232F40 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		4230C1251F2847D700232F40 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		42463F921F22F6AD00CC0419 /* LeftMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuVC.h; sourceTree = "<group>"; };
+		42463F931F22F6AD00CC0419 /* LeftMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuVC.m; sourceTree = "<group>"; };
+		42463F971F238D2700CC0419 /* KualitasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KualitasVC.h; sourceTree = "<group>"; };
+		42463F981F238D2700CC0419 /* KualitasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KualitasVC.m; sourceTree = "<group>"; };
+		42463F991F238D2700CC0419 /* KualitasVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KualitasVC.xib; sourceTree = "<group>"; };
+		42463F9C1F238D8600CC0419 /* KapasitasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KapasitasVC.h; sourceTree = "<group>"; };
+		42463F9D1F238D8600CC0419 /* KapasitasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KapasitasVC.m; sourceTree = "<group>"; };
+		42463F9E1F238D8600CC0419 /* KapasitasVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KapasitasVC.xib; sourceTree = "<group>"; };
+		42463FA11F238DA600CC0419 /* KomersialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KomersialVC.h; sourceTree = "<group>"; };
+		42463FA21F238DA600CC0419 /* KomersialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KomersialVC.m; sourceTree = "<group>"; };
+		42463FA31F238DA600CC0419 /* KomersialVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KomersialVC.xib; sourceTree = "<group>"; };
+		42463FAB1F24116100CC0419 /* TabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabVC.h; sourceTree = "<group>"; };
+		42463FAC1F24116100CC0419 /* TabVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabVC.m; sourceTree = "<group>"; };
+		42463FAD1F24116100CC0419 /* TabVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabVC.xib; sourceTree = "<group>"; };
+		4295C91B1F280F5500880CE9 /* KCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCell.h; sourceTree = "<group>"; };
+		4295C91C1F280F5500880CE9 /* KCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCell.m; sourceTree = "<group>"; };
+		4295C91D1F280F5500880CE9 /* KCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCell.xib; sourceTree = "<group>"; };
+		42A8BF591F369D430017152B /* EditProgramVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProgramVC.h; sourceTree = "<group>"; };
+		42A8BF5A1F369D430017152B /* EditProgramVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProgramVC.m; sourceTree = "<group>"; };
+		42A8BF5B1F369D430017152B /* EditProgramVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProgramVC.xib; sourceTree = "<group>"; };
 		42BE9E731F2060AB0097A442 /* simonag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simonag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BE9E771F2060AB0097A442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42BE9E791F2060AB0097A442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42BE9E7A1F2060AB0097A442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		42BE9E7C1F2060AB0097A442 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		42BE9E7D1F2060AB0097A442 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		42BE9E801F2060AB0097A442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42BE9E831F2060AB0097A442 /* simonag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simonag.xcdatamodel; sourceTree = "<group>"; };
 		42BE9E851F2060AB0097A442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42BE9E881F2060AB0097A442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +122,35 @@
 		42BE9E9A1F2060AB0097A442 /* simonagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simonagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BE9E9E1F2060AB0097A442 /* simonagUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simonagUITests.m; sourceTree = "<group>"; };
 		42BE9EA01F2060AB0097A442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42BE9EB01F2065090097A442 /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
+		42BE9EB11F2065090097A442 /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
+		42BE9EB21F2065090097A442 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		42E9FB081F2D0CA7002FDF35 /* AuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
+		42E9FB091F2D0CA7002FDF35 /* AuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthService.m; sourceTree = "<group>"; };
+		42E9FB0B1F2D11A1002FDF35 /* ForgotPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordVC.h; sourceTree = "<group>"; };
+		42E9FB0C1F2D11A1002FDF35 /* ForgotPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordVC.m; sourceTree = "<group>"; };
+		42E9FB0D1F2D11A1002FDF35 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		42E9FB101F2D83BC002FDF35 /* ProgressProgramVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressProgramVC.h; sourceTree = "<group>"; };
+		42E9FB111F2D83BC002FDF35 /* ProgressProgramVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressProgramVC.m; sourceTree = "<group>"; };
+		42E9FB121F2D83BC002FDF35 /* ProgressProgramVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressProgramVC.xib; sourceTree = "<group>"; };
+		42E9FB151F2D9186002FDF35 /* ProgramPerusahaan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramPerusahaan.h; sourceTree = "<group>"; };
+		42E9FB161F2D9186002FDF35 /* ProgramPerusahaan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramPerusahaan.m; sourceTree = "<group>"; };
+		42E9FB181F2DBD54002FDF35 /* ProgressAktifitasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressAktifitasVC.h; sourceTree = "<group>"; };
+		42E9FB191F2DBD54002FDF35 /* ProgressAktifitasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressAktifitasVC.m; sourceTree = "<group>"; };
+		42E9FB1A1F2DBD54002FDF35 /* ProgressAktifitasVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressAktifitasVC.xib; sourceTree = "<group>"; };
+		42E9FB1D1F2DBF53002FDF35 /* TargetProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetProgram.h; sourceTree = "<group>"; };
+		42E9FB1E1F2DBF53002FDF35 /* TargetProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetProgram.m; sourceTree = "<group>"; };
+		42E9FB201F2E24F6002FDF35 /* TargetProgramCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetProgramCell.h; sourceTree = "<group>"; };
+		42E9FB211F2E24F6002FDF35 /* TargetProgramCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetProgramCell.m; sourceTree = "<group>"; };
+		42E9FB221F2E24F6002FDF35 /* TargetProgramCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TargetProgramCell.xib; sourceTree = "<group>"; };
+		44A212CDC5B04989D3D0F4B6 /* Pods-simonagTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simonagTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simonagTests/Pods-simonagTests.debug.xcconfig"; sourceTree = "<group>"; };
+		652DC512E24F09D41EAF11F9 /* libPods-simonagUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-simonagUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D101A59FBF83C5BD093A23 /* Pods-simonagUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simonagUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simonagUITests/Pods-simonagUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D47BC68DE19B32BE75F06B5 /* Pods-simonagTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simonagTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-simonagTests/Pods-simonagTests.release.xcconfig"; sourceTree = "<group>"; };
+		94DBFF885A082E501A746380 /* libPods-simonag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-simonag.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7CDD7465718028E173C089 /* Pods-simonagUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simonagUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-simonagUITests/Pods-simonagUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D030857F5A5DB2ED92E41874 /* Pods-simonag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simonag.release.xcconfig"; path = "Pods/Target Support Files/Pods-simonag/Pods-simonag.release.xcconfig"; sourceTree = "<group>"; };
+		D1BAE7F66839779F0B988B3A /* Pods-simonag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simonag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simonag/Pods-simonag.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4080573BEAC94C1FF9DD09 /* libPods-simonag.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17853EC734BA092BE158C459 /* libPods-simonagTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F929439CBC08370259C29E84 /* libPods-simonagUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +188,8 @@
 				42BE9E921F2060AB0097A442 /* simonagTests */,
 				42BE9E9D1F2060AB0097A442 /* simonagUITests */,
 				42BE9E741F2060AB0097A442 /* Products */,
+				B782956577D9D68EF1A363D4 /* Pods */,
+				F85145425B065F0585C68E88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +206,12 @@
 		42BE9E751F2060AB0097A442 /* simonag */ = {
 			isa = PBXGroup;
 			children = (
+				42BE9EAF1F2063380097A442 /* Model */,
+				42BE9EAE1F2063320097A442 /* View */,
+				42BE9EAD1F20632B0097A442 /* Controller */,
+				42BE9EAC1F2063200097A442 /* Services */,
 				42BE9E791F2060AB0097A442 /* AppDelegate.h */,
 				42BE9E7A1F2060AB0097A442 /* AppDelegate.m */,
-				42BE9E7C1F2060AB0097A442 /* ViewController.h */,
-				42BE9E7D1F2060AB0097A442 /* ViewController.m */,
-				42BE9E7F1F2060AB0097A442 /* Main.storyboard */,
 				42BE9E851F2060AB0097A442 /* Assets.xcassets */,
 				42BE9E871F2060AB0097A442 /* LaunchScreen.storyboard */,
 				42BE9E8A1F2060AB0097A442 /* Info.plist */,
@@ -143,6 +247,113 @@
 			path = simonagUITests;
 			sourceTree = "<group>";
 		};
+		42BE9EAC1F2063200097A442 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4230C11D1F283D3300232F40 /* DataService.h */,
+				4230C11E1F283D3300232F40 /* DataService.m */,
+				42E9FB081F2D0CA7002FDF35 /* AuthService.h */,
+				42E9FB091F2D0CA7002FDF35 /* AuthService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		42BE9EAD1F20632B0097A442 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4230C1231F2847D700232F40 /* LoginVC.h */,
+				4230C1241F2847D700232F40 /* LoginVC.m */,
+				42E9FB0B1F2D11A1002FDF35 /* ForgotPasswordVC.h */,
+				42E9FB0C1F2D11A1002FDF35 /* ForgotPasswordVC.m */,
+				42463F921F22F6AD00CC0419 /* LeftMenuVC.h */,
+				42463F931F22F6AD00CC0419 /* LeftMenuVC.m */,
+				42463FAB1F24116100CC0419 /* TabVC.h */,
+				42463FAC1F24116100CC0419 /* TabVC.m */,
+				42BE9EB01F2065090097A442 /* ProfileVC.h */,
+				42BE9EB11F2065090097A442 /* ProfileVC.m */,
+				422AED411F2ECBFF008DF13D /* AddProgramVC.h */,
+				422AED421F2ECBFF008DF13D /* AddProgramVC.m */,
+				42A8BF591F369D430017152B /* EditProgramVC.h */,
+				42A8BF5A1F369D430017152B /* EditProgramVC.m */,
+				42463F971F238D2700CC0419 /* KualitasVC.h */,
+				42463F981F238D2700CC0419 /* KualitasVC.m */,
+				42463F9C1F238D8600CC0419 /* KapasitasVC.h */,
+				42463F9D1F238D8600CC0419 /* KapasitasVC.m */,
+				42463FA11F238DA600CC0419 /* KomersialVC.h */,
+				42463FA21F238DA600CC0419 /* KomersialVC.m */,
+				4295C91B1F280F5500880CE9 /* KCell.h */,
+				4295C91C1F280F5500880CE9 /* KCell.m */,
+				42E9FB101F2D83BC002FDF35 /* ProgressProgramVC.h */,
+				42E9FB111F2D83BC002FDF35 /* ProgressProgramVC.m */,
+				422AED3C1F2EC848008DF13D /* ProgramPerusahaanCell.h */,
+				422AED3D1F2EC848008DF13D /* ProgramPerusahaanCell.m */,
+				42E9FB181F2DBD54002FDF35 /* ProgressAktifitasVC.h */,
+				42E9FB191F2DBD54002FDF35 /* ProgressAktifitasVC.m */,
+				42E9FB201F2E24F6002FDF35 /* TargetProgramCell.h */,
+				42E9FB211F2E24F6002FDF35 /* TargetProgramCell.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		42BE9EAE1F2063320097A442 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				422AED491F2ED12F008DF13D /* SquareButton.h */,
+				422AED4A1F2ED12F008DF13D /* SquareButton.m */,
+				4230C1251F2847D700232F40 /* LoginVC.xib */,
+				42E9FB0D1F2D11A1002FDF35 /* ForgotPasswordVC.xib */,
+				42463FAD1F24116100CC0419 /* TabVC.xib */,
+				42BE9EB21F2065090097A442 /* ProfileVC.xib */,
+				422AED431F2ECBFF008DF13D /* AddProgramVC.xib */,
+				42A8BF5B1F369D430017152B /* EditProgramVC.xib */,
+				42463F991F238D2700CC0419 /* KualitasVC.xib */,
+				42463F9E1F238D8600CC0419 /* KapasitasVC.xib */,
+				42463FA31F238DA600CC0419 /* KomersialVC.xib */,
+				4295C91D1F280F5500880CE9 /* KCell.xib */,
+				42E9FB121F2D83BC002FDF35 /* ProgressProgramVC.xib */,
+				422AED3E1F2EC848008DF13D /* ProgramPerusahaanCell.xib */,
+				42E9FB1A1F2DBD54002FDF35 /* ProgressAktifitasVC.xib */,
+				42E9FB221F2E24F6002FDF35 /* TargetProgramCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		42BE9EAF1F2063380097A442 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4230C1201F28454100232F40 /* Dashboard.h */,
+				4230C1211F28454100232F40 /* Dashboard.m */,
+				42E9FB151F2D9186002FDF35 /* ProgramPerusahaan.h */,
+				42E9FB161F2D9186002FDF35 /* ProgramPerusahaan.m */,
+				42E9FB1D1F2DBF53002FDF35 /* TargetProgram.h */,
+				42E9FB1E1F2DBF53002FDF35 /* TargetProgram.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B782956577D9D68EF1A363D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1BAE7F66839779F0B988B3A /* Pods-simonag.debug.xcconfig */,
+				D030857F5A5DB2ED92E41874 /* Pods-simonag.release.xcconfig */,
+				44A212CDC5B04989D3D0F4B6 /* Pods-simonagTests.debug.xcconfig */,
+				8D47BC68DE19B32BE75F06B5 /* Pods-simonagTests.release.xcconfig */,
+				82D101A59FBF83C5BD093A23 /* Pods-simonagUITests.debug.xcconfig */,
+				BE7CDD7465718028E173C089 /* Pods-simonagUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F85145425B065F0585C68E88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94DBFF885A082E501A746380 /* libPods-simonag.a */,
+				295E270302D305B332E469C4 /* libPods-simonagTests.a */,
+				652DC512E24F09D41EAF11F9 /* libPods-simonagUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +361,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42BE9EA31F2060AB0097A442 /* Build configuration list for PBXNativeTarget "simonag" */;
 			buildPhases = (
+				F32075236032DCFF6C310382 /* [CP] Check Pods Manifest.lock */,
 				42BE9E6F1F2060AB0097A442 /* Sources */,
 				42BE9E701F2060AB0097A442 /* Frameworks */,
 				42BE9E711F2060AB0097A442 /* Resources */,
+				09FA737C94DE4035206CA6C6 /* [CP] Embed Pods Frameworks */,
+				ABDCD2459E4709C5A3B0460D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +381,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42BE9EA61F2060AB0097A442 /* Build configuration list for PBXNativeTarget "simonagTests" */;
 			buildPhases = (
+				6B2B7D1C7D2EB30BE35C21FB /* [CP] Check Pods Manifest.lock */,
 				42BE9E8B1F2060AB0097A442 /* Sources */,
 				42BE9E8C1F2060AB0097A442 /* Frameworks */,
 				42BE9E8D1F2060AB0097A442 /* Resources */,
+				1FA70F97342A3DF274E4B373 /* [CP] Embed Pods Frameworks */,
+				72B731054E743CE02CE3B172 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +402,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42BE9EA91F2060AB0097A442 /* Build configuration list for PBXNativeTarget "simonagUITests" */;
 			buildPhases = (
+				A5BF8F2DF385CC590BB52DC1 /* [CP] Check Pods Manifest.lock */,
 				42BE9E961F2060AB0097A442 /* Sources */,
 				42BE9E971F2060AB0097A442 /* Frameworks */,
 				42BE9E981F2060AB0097A442 /* Resources */,
+				F234D9A828AA18F614C5594D /* [CP] Embed Pods Frameworks */,
+				6FAA9EAD24A948BE7672D1D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +472,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E9FB141F2D83BC002FDF35 /* ProgressProgramVC.xib in Resources */,
+				4230C1271F2847D700232F40 /* LoginVC.xib in Resources */,
+				4295C91F1F280F5500880CE9 /* KCell.xib in Resources */,
+				42463FA51F238DA600CC0419 /* KomersialVC.xib in Resources */,
 				42BE9E891F2060AB0097A442 /* LaunchScreen.storyboard in Resources */,
+				42BE9EB41F2065090097A442 /* ProfileVC.xib in Resources */,
+				42463FA01F238D8600CC0419 /* KapasitasVC.xib in Resources */,
+				42E9FB0F1F2D11A1002FDF35 /* ForgotPasswordVC.xib in Resources */,
+				42E9FB241F2E24F6002FDF35 /* TargetProgramCell.xib in Resources */,
+				42A8BF5D1F369D430017152B /* EditProgramVC.xib in Resources */,
+				42463FAF1F24116100CC0419 /* TabVC.xib in Resources */,
+				422AED451F2ECBFF008DF13D /* AddProgramVC.xib in Resources */,
+				42463F9B1F238D2700CC0419 /* KualitasVC.xib in Resources */,
+				42E9FB1C1F2DBD54002FDF35 /* ProgressAktifitasVC.xib in Resources */,
+				422AED401F2EC848008DF13D /* ProgramPerusahaanCell.xib in Resources */,
 				42BE9E861F2060AB0097A442 /* Assets.xcassets in Resources */,
-				42BE9E811F2060AB0097A442 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,15 +507,173 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09FA737C94DE4035206CA6C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simonag/Pods-simonag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FA70F97342A3DF274E4B373 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simonagTests/Pods-simonagTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B2B7D1C7D2EB30BE35C21FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FAA9EAD24A948BE7672D1D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simonagUITests/Pods-simonagUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B731054E743CE02CE3B172 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simonagTests/Pods-simonagTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5BF8F2DF385CC590BB52DC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABDCD2459E4709C5A3B0460D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simonag/Pods-simonag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F234D9A828AA18F614C5594D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simonagUITests/Pods-simonagUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F32075236032DCFF6C310382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		42BE9E6F1F2060AB0097A442 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42BE9E7E1F2060AB0097A442 /* ViewController.m in Sources */,
+				42463F951F22F6AD00CC0419 /* LeftMenuVC.m in Sources */,
+				42BE9EB31F2065090097A442 /* ProfileVC.m in Sources */,
+				42E9FB1B1F2DBD54002FDF35 /* ProgressAktifitasVC.m in Sources */,
+				4230C1221F28454100232F40 /* Dashboard.m in Sources */,
+				4295C91E1F280F5500880CE9 /* KCell.m in Sources */,
+				42E9FB171F2D9186002FDF35 /* ProgramPerusahaan.m in Sources */,
+				4230C11F1F283D3300232F40 /* DataService.m in Sources */,
+				42E9FB0A1F2D0CA7002FDF35 /* AuthService.m in Sources */,
 				42BE9E7B1F2060AB0097A442 /* AppDelegate.m in Sources */,
+				42A8BF5C1F369D430017152B /* EditProgramVC.m in Sources */,
+				42463FA41F238DA600CC0419 /* KomersialVC.m in Sources */,
 				42BE9E841F2060AB0097A442 /* simonag.xcdatamodeld in Sources */,
+				422AED3F1F2EC848008DF13D /* ProgramPerusahaanCell.m in Sources */,
+				42E9FB0E1F2D11A1002FDF35 /* ForgotPasswordVC.m in Sources */,
+				422AED4B1F2ED12F008DF13D /* SquareButton.m in Sources */,
+				42463FAE1F24116100CC0419 /* TabVC.m in Sources */,
+				42E9FB231F2E24F6002FDF35 /* TargetProgramCell.m in Sources */,
 				42BE9E781F2060AB0097A442 /* main.m in Sources */,
+				42463F9A1F238D2700CC0419 /* KualitasVC.m in Sources */,
+				422AED441F2ECBFF008DF13D /* AddProgramVC.m in Sources */,
+				4230C1261F2847D700232F40 /* LoginVC.m in Sources */,
+				42E9FB1F1F2DBF53002FDF35 /* TargetProgram.m in Sources */,
+				42463F9F1F238D8600CC0419 /* KapasitasVC.m in Sources */,
+				42E9FB131F2D83BC002FDF35 /* ProgressProgramVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +709,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		42BE9E7F1F2060AB0097A442 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42BE9E801F2060AB0097A442 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		42BE9E871F2060AB0097A442 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,10 +814,12 @@
 		};
 		42BE9EA41F2060AB0097A442 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1BAE7F66839779F0B988B3A /* Pods-simonag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LUA2486PNE;
 				INFOPLIST_FILE = simonag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randyfloranno.simonag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,10 +828,12 @@
 		};
 		42BE9EA51F2060AB0097A442 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D030857F5A5DB2ED92E41874 /* Pods-simonag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LUA2486PNE;
 				INFOPLIST_FILE = simonag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randyfloranno.simonag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +842,7 @@
 		};
 		42BE9EA71F2060AB0097A442 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A212CDC5B04989D3D0F4B6 /* Pods-simonagTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = LUA2486PNE;
@@ -468,6 +856,7 @@
 		};
 		42BE9EA81F2060AB0097A442 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D47BC68DE19B32BE75F06B5 /* Pods-simonagTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = LUA2486PNE;
@@ -481,6 +870,7 @@
 		};
 		42BE9EAA1F2060AB0097A442 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D101A59FBF83C5BD093A23 /* Pods-simonagUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = LUA2486PNE;
 				INFOPLIST_FILE = simonagUITests/Info.plist;
@@ -493,6 +883,7 @@
 		};
 		42BE9EAB1F2060AB0097A442 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7CDD7465718028E173C089 /* Pods-simonagUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = LUA2486PNE;
 				INFOPLIST_FILE = simonagUITests/Info.plist;
@@ -522,6 +913,7 @@
 				42BE9EA51F2060AB0097A442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42BE9EA61F2060AB0097A442 /* Build configuration list for PBXNativeTarget "simonagTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +922,7 @@
 				42BE9EA81F2060AB0097A442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42BE9EA91F2060AB0097A442 /* Build configuration list for PBXNativeTarget "simonagUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +931,7 @@
 				42BE9EAB1F2060AB0097A442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

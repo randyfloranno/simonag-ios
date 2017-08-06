@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProgramVC">
             <connections>
+                <outlet property="imageView" destination="1mr-cW-YPp" id="iJK-K4-ptH"/>
+                <outlet property="namaProgramTextField" destination="sVg-m0-c2c" id="wPW-OL-sRe"/>
+                <outlet property="tableView" destination="tve-qQ-9l6" id="2Fg-Zy-vN3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,69 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1mr-cW-YPp">
+                    <rect key="frame" x="164" y="8" width="46" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="C6y-WX-ae5"/>
+                        <constraint firstAttribute="width" constant="46" id="zfC-M3-b2X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4b-1x-BDr">
+                    <rect key="frame" x="8" y="62" width="109" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="77v-Pl-Nyp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: Penyediaan Jaringan Telekomunikasi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVg-m0-c2c">
+                    <rect key="frame" x="8" y="94" width="319" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Jfz-Xu-BaE"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tve-qQ-9l6">
+                    <rect key="frame" x="8" y="134" width="359" height="525"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN6-Q9-L0r" customClass="SquareButton">
+                    <rect key="frame" x="335" y="94" width="32" height="32"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="0u4-8j-77G"/>
+                        <constraint firstAttribute="height" constant="32" id="BjF-Y6-3zi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <state key="normal" image="add-icon-32"/>
+                    <connections>
+                        <action selector="addBtnTapped:" destination="-1" eventType="touchUpInside" id="7ZB-3B-P2S"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RN6-Q9-L0r" firstAttribute="leading" secondItem="sVg-m0-c2c" secondAttribute="trailing" constant="8" id="CQ5-E4-EDe"/>
+                <constraint firstItem="tve-qQ-9l6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="HWS-gy-mmk"/>
+                <constraint firstItem="K4b-1x-BDr" firstAttribute="top" secondItem="1mr-cW-YPp" secondAttribute="bottom" constant="8" id="J2A-tf-j3E"/>
+                <constraint firstItem="K4b-1x-BDr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="QOj-e0-EyE"/>
+                <constraint firstAttribute="bottom" secondItem="tve-qQ-9l6" secondAttribute="bottom" constant="8" id="TIy-mn-I6D"/>
+                <constraint firstItem="1mr-cW-YPp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cVN-pK-AVC"/>
+                <constraint firstItem="sVg-m0-c2c" firstAttribute="top" secondItem="K4b-1x-BDr" secondAttribute="bottom" constant="8" id="eiL-h0-0xx"/>
+                <constraint firstAttribute="trailing" secondItem="tve-qQ-9l6" secondAttribute="trailing" constant="8" id="fBY-Wz-5Hi"/>
+                <constraint firstItem="sVg-m0-c2c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="fgV-nF-Uf1"/>
+                <constraint firstItem="1mr-cW-YPp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="kjv-4M-Rxo"/>
+                <constraint firstItem="tve-qQ-9l6" firstAttribute="top" secondItem="sVg-m0-c2c" secondAttribute="bottom" constant="8" id="vdB-Oi-iau"/>
+                <constraint firstAttribute="trailing" secondItem="RN6-Q9-L0r" secondAttribute="trailing" constant="8" id="zDE-s3-x4W"/>
+                <constraint firstItem="RN6-Q9-L0r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="zMi-n8-K2U"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="add-icon-32" width="32" height="32"/>
+    </resources>
 </document>
