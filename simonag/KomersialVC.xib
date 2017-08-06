@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KomersialVC">
             <connections>
+                <outlet property="jumlahBUMNdanJumlahProgram" destination="0Ak-jW-G5L" id="emn-eb-XJ6"/>
+                <outlet property="komersialTableView" destination="QTd-GV-tAg" id="g4V-1s-VXR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -65,13 +67,21 @@
                     <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QTd-GV-tAg">
+                    <rect key="frame" x="8" y="116" width="359" height="501"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="QTd-GV-tAg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7Nb-5e-J85"/>
                 <constraint firstItem="2wg-wb-zVK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7ks-Ow-IB8"/>
+                <constraint firstAttribute="trailing" secondItem="QTd-GV-tAg" secondAttribute="trailing" constant="8" id="9kC-jH-acA"/>
+                <constraint firstItem="QTd-GV-tAg" firstAttribute="top" secondItem="lhC-4Z-1eM" secondAttribute="bottom" constant="8" id="GRa-tC-1P4"/>
                 <constraint firstItem="lhC-4Z-1eM" firstAttribute="top" secondItem="0Ak-jW-G5L" secondAttribute="bottom" constant="8" id="Icg-Pd-ryQ"/>
                 <constraint firstItem="2wg-wb-zVK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TrS-yp-cUR"/>
                 <constraint firstItem="0Ak-jW-G5L" firstAttribute="top" secondItem="2wg-wb-zVK" secondAttribute="bottom" constant="8" id="d9e-mj-N4j"/>
+                <constraint firstAttribute="bottom" secondItem="QTd-GV-tAg" secondAttribute="bottom" constant="50" id="dcr-4N-Lfy"/>
                 <constraint firstAttribute="trailing" secondItem="2wg-wb-zVK" secondAttribute="trailing" id="rha-yA-YOf"/>
                 <constraint firstItem="0Ak-jW-G5L" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x47-de-xo2"/>
                 <constraint firstItem="lhC-4Z-1eM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xGy-Fi-4i8"/>

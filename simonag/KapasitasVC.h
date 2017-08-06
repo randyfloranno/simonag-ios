@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KapasitasVC : UIViewController
+@interface KapasitasVC : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *dashboardList;
+}
 
 @end

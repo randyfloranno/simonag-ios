@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KomersialVC : UIViewController
+@interface KomersialVC : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *dashboardList;
+}
 
 @end

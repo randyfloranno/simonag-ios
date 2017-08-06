@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KapasitasVC">
             <connections>
+                <outlet property="jumlahBUMNdanJumlahProgram" destination="WM0-F5-8eK" id="MGQ-MC-Phv"/>
+                <outlet property="kapasitasTableView" destination="pya-DN-cw7" id="wID-14-lbd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -65,16 +67,24 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pya-DN-cw7">
+                    <rect key="frame" x="8" y="116" width="359" height="501"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="8EE-Ku-sdF" secondAttribute="trailing" id="4xq-bs-uab"/>
                 <constraint firstItem="WM0-F5-8eK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dbt-BZ-tKt"/>
                 <constraint firstItem="ldz-kO-UlG" firstAttribute="top" secondItem="WM0-F5-8eK" secondAttribute="bottom" constant="8" id="FgG-8b-JS6"/>
+                <constraint firstItem="pya-DN-cw7" firstAttribute="top" secondItem="ldz-kO-UlG" secondAttribute="bottom" constant="8" id="HTi-0t-FSa"/>
+                <constraint firstAttribute="trailing" secondItem="pya-DN-cw7" secondAttribute="trailing" constant="8" id="PzZ-En-WKp"/>
                 <constraint firstItem="8EE-Ku-sdF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qih-qI-MOl"/>
+                <constraint firstAttribute="bottom" secondItem="pya-DN-cw7" secondAttribute="bottom" constant="50" id="Xyl-lG-Asc"/>
                 <constraint firstItem="8EE-Ku-sdF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="asN-hK-nUO"/>
                 <constraint firstItem="ldz-kO-UlG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dii-Pg-gIu"/>
                 <constraint firstItem="WM0-F5-8eK" firstAttribute="top" secondItem="8EE-Ku-sdF" secondAttribute="bottom" constant="8" id="ezF-FW-Nhi"/>
+                <constraint firstItem="pya-DN-cw7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ijt-wY-GRE"/>
             </constraints>
         </view>
     </objects>
