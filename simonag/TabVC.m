@@ -42,10 +42,6 @@
                                                                          style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
     
     self.navigationItem.leftBarButtonItem = revealButtonItem;
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:(BOOL)animated];
     
     id_role = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_role"];
     id_tipe = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_tipe"];
@@ -54,6 +50,10 @@
     authToken = [[NSUserDefaults standardUserDefaults] stringForKey:@"authToken"];
     nama = [[NSUserDefaults standardUserDefaults] stringForKey:@"nama"];
     foto = [[NSUserDefaults standardUserDefaults] stringForKey:@"foto"];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:(BOOL)animated];
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{

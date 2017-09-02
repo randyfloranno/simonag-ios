@@ -110,6 +110,14 @@
     
     // selecting row
     NSInteger row = indexPath.row;
+    
+    if ( row == _presentedRow ) {
+        [revealController setFrontViewPosition:FrontViewPositionLeft animated:YES];
+        return;
+    }
+    
+    // otherwise we'll create a new frontViewController and push it with animation
+    
     UIViewController *newFrontController = nil;
     
     if (row == 0) {
@@ -125,6 +133,8 @@
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:newFrontController];
     [revealController pushFrontViewController:navigationController animated:YES];
+    
+    _presentedRow = row;  // <- store the presented row
 }
 
 // Local method

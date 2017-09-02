@@ -303,7 +303,6 @@
 				42E9FB211F2E24F6002FDF35 /* TargetProgramCell.m */,
 				42A8BF5E1F36C97A0017152B /* AddTargetProgramVC.h */,
 				42A8BF5F1F36C97A0017152B /* AddTargetProgramVC.m */,
-				42A8BF601F36C97A0017152B /* AddTargetProgramVC.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -330,6 +329,7 @@
 				422AED3E1F2EC848008DF13D /* ProgramPerusahaanCell.xib */,
 				42E9FB1A1F2DBD54002FDF35 /* ProgressAktifitasVC.xib */,
 				42E9FB221F2E24F6002FDF35 /* TargetProgramCell.xib */,
+				42A8BF601F36C97A0017152B /* AddTargetProgramVC.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
