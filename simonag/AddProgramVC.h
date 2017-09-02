@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RESideMenu.h>
+#import <SWRevealViewController.h>
 
 @class Dashboard;
 

@@ -7,6 +7,7 @@
 //
 
 #import "TabVC.h"
+#import <SWRevealViewController.h>
 #import "DataService.h"
 #import "LoginVC.h"
 #import "Dashboard.h"
@@ -32,34 +33,15 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Pencapaian 3K";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"sidemenu-icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:self
-                                                                            action:@selector(presentLeftMenuViewController:)];
-    //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Right"
-    //                                                                              style:UIBarButtonItemStylePlain
-    //                                                                             target:self
-    //                                                                             action:@selector(presentRightMenuViewController:)];
+    SWRevealViewController *revealController = [self revealViewController];
     
-    //    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    //    imageView.contentMode = UIViewContentModeScaleAspectFill;
-    //    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    //    imageView.image = [UIImage imageNamed:@"Balloon"];
-    //    [self.view addSubview:imageView];
+    [revealController panGestureRecognizer];
+    [revealController tapGestureRecognizer];
     
-//    //tabbar
-//    KualitasVC *kualitasVC = [[KualitasVC alloc] init];
-//    KapasitasVC *kapasitasVC = [[KapasitasVC alloc] init];
-//    KomersialVC *komersialVC = [[KomersialVC alloc] init];
-//    
-//    NSArray *tabViewControllers = @[kualitasVC, kapasitasVC, komersialVC];
-//    
-//    [self setViewControllers:tabViewControllers];
-//    
-//    //
-//    kualitasVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Kualitas" image:nil tag:0];
-//    kapasitasVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Kapasitas" image:nil tag:1];
-//    komersialVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Komersial" image:nil tag:2];
+    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sidemenu-icon"]
+                                                                         style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
+    
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
 }
 
 - (void)viewDidAppear:(BOOL)animated {

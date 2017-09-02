@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RESideMenu.h>
 
 #import "KualitasVC.h"
 #import "KapasitasVC.h"

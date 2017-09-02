@@ -9,13 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-#import <RESideMenu.h>
+@class SWRevealViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, RESideMenuDelegate, UITabBarControllerDelegate, UITabBarDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (strong, nonatomic) SWRevealViewController *viewController;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 

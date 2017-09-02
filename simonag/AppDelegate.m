@@ -7,46 +7,43 @@
 //
 
 #import "AppDelegate.h"
-#import "ProfileVC.h"
-#import "LeftMenuVC.h"
+#import <SWRevealViewController.h>
+#import "TabVC.h" //front view
+#import "LeftMenuVC.h" //rear view
 
-#import "KualitasVC.h"
-#import "KapasitasVC.h"
-#import "KomersialVC.h"
-
-#import "TabVC.h"
-
-@interface AppDelegate ()
+@interface AppDelegate ()<SWRevealViewControllerDelegate>
 
 @end
 
 @implementation AppDelegate
 
-@synthesize tabBarController;
-
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = window;
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[TabVC alloc] init]];
-    LeftMenuVC *leftMenuViewController = [[LeftMenuVC alloc] init];
-    UIViewController *rightMenuViewController = [[UIViewController alloc] init];
+    TabVC *tabVC = [[TabVC alloc] init];
+    LeftMenuVC *leftMenuVC = [[LeftMenuVC alloc] init];
     
-    // Create side menu controller
-    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
-                                                                    leftMenuViewController:leftMenuViewController
-                                                                   rightMenuViewController:rightMenuViewController];
+    UINavigationController *leftNavigationController = [[UINavigationController alloc] initWithRootViewController:tabVC];
     
-    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"Stars"];
-    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
-    sideMenuViewController.delegate = self;
-    sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
-    sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
-    sideMenuViewController.contentViewShadowOpacity = 0.6;
-    sideMenuViewController.contentViewShadowRadius = 12;
-    sideMenuViewController.contentViewShadowEnabled = YES;
-    self.window.rootViewController = sideMenuViewController;
+    [leftNavigationController.navigationBar setBarTintColor:[UIColor colorWithRed:(0/255.0) green:(154/255.0) blue:(202/255.0) alpha:1.0]];
     
+    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:leftMenuVC];
+    
+    SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:rearNavigationController frontViewController:leftNavigationController];
+    revealController.delegate = self;
+    
+    //    RightViewController *rightViewController = rightViewController = [[RightViewController alloc] init];
+    //    rightViewController.view.backgroundColor = [UIColor greenColor];
+    //
+    //    revealController.rightViewController = rightViewController;
+    
+    self.viewController = revealController;
+    
+    self.window.rootViewController = self.viewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
@@ -61,30 +58,6 @@
     
     return YES;
 }
-
-#pragma mark -
-#pragma mark RESideMenu Delegate
-
-- (void)sideMenu:(RESideMenu *)sideMenu willShowMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"willShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
-}
-
-- (void)sideMenu:(RESideMenu *)sideMenu didShowMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"didShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
-}
-
-- (void)sideMenu:(RESideMenu *)sideMenu willHideMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"willHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
-}
-
-- (void)sideMenu:(RESideMenu *)sideMenu didHideMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"didHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

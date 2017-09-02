@@ -12,8 +12,7 @@ target 'simonag' do
   pod 'MBProgressHUD'
   pod 'SVPullToRefresh'
   pod 'AFNetworking'
-  pod 'RESideMenu'
-  pod 'LDProgressView'
+  pod 'SWRevealViewController'
 
   target 'simonagTests' do
     inherit! :search_paths

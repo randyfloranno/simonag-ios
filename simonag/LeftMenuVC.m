@@ -2,16 +2,29 @@
 //  LeftMenuVC.m
 //  simonag
 //
-//  Created by Randy Floranno Hasdi on 7/22/17.
+//  Created by Randy Floranno Hasdi on 9/2/17.
 //  Copyright © 2017 randyfloranno. All rights reserved.
 //
 
 #import "LeftMenuVC.h"
+#import <SWRevealViewController.h>
 #import "AddProgramVC.h"
 #import "TabVC.h"
 #import "LoginVC.h"
+#import "DataService.h"
+#import <UIImageView+AFNetworking.h>
 
-@interface LeftMenuVC ()
+@interface LeftMenuVC () {
+    NSInteger _presentedRow;
+    NSString *id_role;
+    NSString *id_tipe;
+    NSString *id_perusahaanStr;
+    NSNumber *id_perusahaanInt;
+    NSString *authToken;
+    NSString *nama;
+    NSString *foto;
+    NSString *usernameEmail;
+}
 
 @property (strong, readwrite, nonatomic) UITableView *tableView;
 
@@ -19,96 +32,99 @@
 
 @implementation LeftMenuVC
 
+@synthesize leftMenuTableView = _leftMenuTableView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView = ({
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - 54 * 5) / 2.0f, self.view.frame.size.width, 54 * 5) style:UITableViewStylePlain];
-        tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
-        tableView.delegate = self;
-        tableView.dataSource = self;
-        tableView.opaque = NO;
-        tableView.backgroundColor = [UIColor clearColor];
-        tableView.backgroundView = nil;
-        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        tableView.bounces = NO;
-        tableView;
+    self.title = @"Simonag";
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:(BOOL)animated];
+    
+    id_role = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_role"];
+    id_tipe = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_tipe"];
+    id_perusahaanStr = [[NSUserDefaults standardUserDefaults] stringForKey:@"id_perusahaan"];
+    id_perusahaanInt = [NSNumber numberWithInteger: [id_perusahaanStr integerValue]];
+    authToken = [[NSUserDefaults standardUserDefaults] stringForKey:@"authToken"];
+    nama = [[NSUserDefaults standardUserDefaults] stringForKey:@"nama"];
+    foto = [[NSUserDefaults standardUserDefaults] stringForKey:@"foto"];
+    usernameEmail = [[NSUserDefaults standardUserDefaults] stringForKey:@"usernameEmail"];
+    
+    self.usernameLabel.text = nama;
+    self.emailLabel.text = usernameEmail;
+    
+    // New Cover Image
+    NSURL *url1 = [NSURL URLWithString:[NSString stringWithFormat:@"http://simonag.owline.org/logo/%@", foto]];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url1];
+    
+    [self.profilePictureImageView setImageWithURLRequest:request
+                          placeholderImage:[UIImage imageNamed:@"empty-icon"]
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                       self.profilePictureImageView.image = [[DataService instance] compressImage:image];
+                                   }
+                                   failure:nil];
+    // End New Cover Image
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.leftMenuTableView reloadData];
     });
-    [self.view addSubview:self.tableView];
 }
 
-#pragma mark -
-#pragma mark UITableView Delegate
+#pragma marl - UITableView Data Source
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    switch (indexPath.row) {
-        case 0:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[TabVC alloc] init]]
-                                                         animated:YES];
-            [self.sideMenuViewController hideMenuViewController];
-            break;
-        case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[AddProgramVC alloc] init]]
-                                                         animated:YES];
-            [self.sideMenuViewController hideMenuViewController];
-            break;
-        case 2:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[AddProgramVC alloc] init]]
-                                                         animated:YES];
-            [self.sideMenuViewController hideMenuViewController];
-            break;
-        case 3:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[AddProgramVC alloc] init]]
-                                                         animated:YES];
-            [self.sideMenuViewController hideMenuViewController];
-            [self goToLoginVC];
-            break;
-        default:
-            break;
-    }
-}
-
-#pragma mark -
-#pragma mark UITableView Datasource
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 54;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 4;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSInteger row = indexPath.row;
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        cell.backgroundColor = [UIColor clearColor];
-        cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
-        cell.textLabel.textColor = [UIColor whiteColor];
-        cell.textLabel.highlightedTextColor = [UIColor lightGrayColor];
-        cell.selectedBackgroundView = [[UIView alloc] init];
+    if (nil == cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
     
-    NSArray *titles = @[@"Dashboard", @"Input Program", @"Tentang", @"Keluar"];
-    NSArray *images = @[@"dashboard-icon", @"add-icon", @"about-icon", @"empty-icon"];
-    cell.textLabel.text = titles[indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
+    NSString *text = nil;
+    if (row == 0) {
+        text = @"Dashboard";
+    } else if (row == 1) {
+        text = @"Input Program";
+    } else if (row == 2) {
+        text = @"Tentang";
+    } else if (row == 3) {
+        text = @"Keluar";
+    }
+    
+    cell.textLabel.text = NSLocalizedString( text,nil );
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Grab a handle to the reveal controller, as if you'd do with a navigtion controller via self.navigationController.
+    SWRevealViewController *revealController = self.revealViewController;
+    
+    // selecting row
+    NSInteger row = indexPath.row;
+    UIViewController *newFrontController = nil;
+    
+    if (row == 0) {
+        newFrontController = [[TabVC alloc] init];
+    } else if (row == 1) {
+        newFrontController = [[AddProgramVC alloc] init];
+    } else if (row == 2) {
+        newFrontController = [[TabVC alloc] init];
+    } else if (row == 3) {
+        [self goToLoginVC];
+        newFrontController = [[TabVC alloc] init];
+    }
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:newFrontController];
+    [revealController pushFrontViewController:navigationController animated:YES];
 }
 
 // Local method

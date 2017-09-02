@@ -35,23 +35,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Input Program";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"sidemenu-icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:self
-                                                                            action:@selector(presentLeftMenuViewController:)];
-    //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Right"
-    //                                                                              style:UIBarButtonItemStylePlain
-    //                                                                             target:self
-    //                                                                             action:@selector(presentRightMenuViewController:)];
+    SWRevealViewController *revealController = [self revealViewController];
     
-//    [self.view addSubview:({
-//        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        button.frame = CGRectMake(0, 84, self.view.frame.size.width, 44);
-//        button.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-//        [button setTitle:@"Push View Controller" forState:UIControlStateNormal];
-//        [button addTarget:self action:@selector(pushViewController:) forControlEvents:UIControlEventTouchUpInside];
-//        button;
-//    })];
+    [revealController panGestureRecognizer];
+    [revealController tapGestureRecognizer];
+    
+    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sidemenu-icon"]
+                                                                         style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
+    
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
     
     self.namaProgramTextField.delegate = self;
     self.tableView.delegate = self;

@@ -92,6 +92,7 @@
                     [[NSUserDefaults standardUserDefaults] setValue:[result valueForKey:@"nama"] forKey:@"nama"];
                     [[NSUserDefaults standardUserDefaults] setValue:[result valueForKey:@"foto"] forKey:@"foto"];
                     [[NSUserDefaults standardUserDefaults] setValue:[result valueForKey:@"token"] forKey:@"authToken"];
+                    [[NSUserDefaults standardUserDefaults] setValue:username forKey:@"usernameEmail"];
                     completionBlock(YES);
                 } else {
                     completionBlock(NO);

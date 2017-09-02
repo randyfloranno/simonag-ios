@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		17853EC734BA092BE158C459 /* libPods-simonagTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 295E270302D305B332E469C4 /* libPods-simonagTests.a */; };
+		42183C491F5A41650075F371 /* LeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42183C471F5A41650075F371 /* LeftMenuVC.m */; };
+		42183C4A1F5A41650075F371 /* LeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42183C481F5A41650075F371 /* LeftMenuVC.xib */; };
+		42183C4D1F5A46BC0075F371 /* RoundedUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42183C4C1F5A46BC0075F371 /* RoundedUIImageView.m */; };
 		422AED3F1F2EC848008DF13D /* ProgramPerusahaanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AED3D1F2EC848008DF13D /* ProgramPerusahaanCell.m */; };
 		422AED401F2EC848008DF13D /* ProgramPerusahaanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422AED3E1F2EC848008DF13D /* ProgramPerusahaanCell.xib */; };
 		422AED441F2ECBFF008DF13D /* AddProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AED421F2ECBFF008DF13D /* AddProgramVC.m */; };
@@ -17,7 +20,6 @@
 		4230C1221F28454100232F40 /* Dashboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230C1211F28454100232F40 /* Dashboard.m */; };
 		4230C1261F2847D700232F40 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230C1241F2847D700232F40 /* LoginVC.m */; };
 		4230C1271F2847D700232F40 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4230C1251F2847D700232F40 /* LoginVC.xib */; };
-		42463F951F22F6AD00CC0419 /* LeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463F931F22F6AD00CC0419 /* LeftMenuVC.m */; };
 		42463F9A1F238D2700CC0419 /* KualitasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463F981F238D2700CC0419 /* KualitasVC.m */; };
 		42463F9B1F238D2700CC0419 /* KualitasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42463F991F238D2700CC0419 /* KualitasVC.xib */; };
 		42463F9F1F238D8600CC0419 /* KapasitasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42463F9D1F238D8600CC0419 /* KapasitasVC.m */; };
@@ -30,6 +32,8 @@
 		4295C91F1F280F5500880CE9 /* KCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4295C91D1F280F5500880CE9 /* KCell.xib */; };
 		42A8BF5C1F369D430017152B /* EditProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A8BF5A1F369D430017152B /* EditProgramVC.m */; };
 		42A8BF5D1F369D430017152B /* EditProgramVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A8BF5B1F369D430017152B /* EditProgramVC.xib */; };
+		42A8BF611F36C97A0017152B /* AddTargetProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A8BF5F1F36C97A0017152B /* AddTargetProgramVC.m */; };
+		42A8BF621F36C97A0017152B /* AddTargetProgramVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A8BF601F36C97A0017152B /* AddTargetProgramVC.xib */; };
 		42BE9E781F2060AB0097A442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E771F2060AB0097A442 /* main.m */; };
 		42BE9E7B1F2060AB0097A442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E7A1F2060AB0097A442 /* AppDelegate.m */; };
 		42BE9E841F2060AB0097A442 /* simonag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42BE9E821F2060AB0097A442 /* simonag.xcdatamodeld */; };
@@ -73,6 +77,11 @@
 
 /* Begin PBXFileReference section */
 		295E270302D305B332E469C4 /* libPods-simonagTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-simonagTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42183C461F5A41650075F371 /* LeftMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuVC.h; sourceTree = "<group>"; };
+		42183C471F5A41650075F371 /* LeftMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuVC.m; sourceTree = "<group>"; };
+		42183C481F5A41650075F371 /* LeftMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuVC.xib; sourceTree = "<group>"; };
+		42183C4B1F5A46BC0075F371 /* RoundedUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedUIImageView.h; sourceTree = "<group>"; };
+		42183C4C1F5A46BC0075F371 /* RoundedUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedUIImageView.m; sourceTree = "<group>"; };
 		422AED3C1F2EC848008DF13D /* ProgramPerusahaanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramPerusahaanCell.h; sourceTree = "<group>"; };
 		422AED3D1F2EC848008DF13D /* ProgramPerusahaanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramPerusahaanCell.m; sourceTree = "<group>"; };
 		422AED3E1F2EC848008DF13D /* ProgramPerusahaanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgramPerusahaanCell.xib; sourceTree = "<group>"; };
@@ -88,8 +97,6 @@
 		4230C1231F2847D700232F40 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		4230C1241F2847D700232F40 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		4230C1251F2847D700232F40 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
-		42463F921F22F6AD00CC0419 /* LeftMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuVC.h; sourceTree = "<group>"; };
-		42463F931F22F6AD00CC0419 /* LeftMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuVC.m; sourceTree = "<group>"; };
 		42463F971F238D2700CC0419 /* KualitasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KualitasVC.h; sourceTree = "<group>"; };
 		42463F981F238D2700CC0419 /* KualitasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KualitasVC.m; sourceTree = "<group>"; };
 		42463F991F238D2700CC0419 /* KualitasVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KualitasVC.xib; sourceTree = "<group>"; };
@@ -108,6 +115,9 @@
 		42A8BF591F369D430017152B /* EditProgramVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProgramVC.h; sourceTree = "<group>"; };
 		42A8BF5A1F369D430017152B /* EditProgramVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProgramVC.m; sourceTree = "<group>"; };
 		42A8BF5B1F369D430017152B /* EditProgramVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProgramVC.xib; sourceTree = "<group>"; };
+		42A8BF5E1F36C97A0017152B /* AddTargetProgramVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTargetProgramVC.h; sourceTree = "<group>"; };
+		42A8BF5F1F36C97A0017152B /* AddTargetProgramVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTargetProgramVC.m; sourceTree = "<group>"; };
+		42A8BF601F36C97A0017152B /* AddTargetProgramVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTargetProgramVC.xib; sourceTree = "<group>"; };
 		42BE9E731F2060AB0097A442 /* simonag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simonag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BE9E771F2060AB0097A442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42BE9E791F2060AB0097A442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -261,14 +271,14 @@
 		42BE9EAD1F20632B0097A442 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				42463FAB1F24116100CC0419 /* TabVC.h */,
+				42463FAC1F24116100CC0419 /* TabVC.m */,
+				42183C461F5A41650075F371 /* LeftMenuVC.h */,
+				42183C471F5A41650075F371 /* LeftMenuVC.m */,
 				4230C1231F2847D700232F40 /* LoginVC.h */,
 				4230C1241F2847D700232F40 /* LoginVC.m */,
 				42E9FB0B1F2D11A1002FDF35 /* ForgotPasswordVC.h */,
 				42E9FB0C1F2D11A1002FDF35 /* ForgotPasswordVC.m */,
-				42463F921F22F6AD00CC0419 /* LeftMenuVC.h */,
-				42463F931F22F6AD00CC0419 /* LeftMenuVC.m */,
-				42463FAB1F24116100CC0419 /* TabVC.h */,
-				42463FAC1F24116100CC0419 /* TabVC.m */,
 				42BE9EB01F2065090097A442 /* ProfileVC.h */,
 				42BE9EB11F2065090097A442 /* ProfileVC.m */,
 				422AED411F2ECBFF008DF13D /* AddProgramVC.h */,
@@ -291,6 +301,9 @@
 				42E9FB191F2DBD54002FDF35 /* ProgressAktifitasVC.m */,
 				42E9FB201F2E24F6002FDF35 /* TargetProgramCell.h */,
 				42E9FB211F2E24F6002FDF35 /* TargetProgramCell.m */,
+				42A8BF5E1F36C97A0017152B /* AddTargetProgramVC.h */,
+				42A8BF5F1F36C97A0017152B /* AddTargetProgramVC.m */,
+				42A8BF601F36C97A0017152B /* AddTargetProgramVC.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -300,9 +313,12 @@
 			children = (
 				422AED491F2ED12F008DF13D /* SquareButton.h */,
 				422AED4A1F2ED12F008DF13D /* SquareButton.m */,
+				42183C4B1F5A46BC0075F371 /* RoundedUIImageView.h */,
+				42183C4C1F5A46BC0075F371 /* RoundedUIImageView.m */,
+				42463FAD1F24116100CC0419 /* TabVC.xib */,
+				42183C481F5A41650075F371 /* LeftMenuVC.xib */,
 				4230C1251F2847D700232F40 /* LoginVC.xib */,
 				42E9FB0D1F2D11A1002FDF35 /* ForgotPasswordVC.xib */,
-				42463FAD1F24116100CC0419 /* TabVC.xib */,
 				42BE9EB21F2065090097A442 /* ProfileVC.xib */,
 				422AED431F2ECBFF008DF13D /* AddProgramVC.xib */,
 				42A8BF5B1F369D430017152B /* EditProgramVC.xib */,
@@ -488,6 +504,8 @@
 				42E9FB1C1F2DBD54002FDF35 /* ProgressAktifitasVC.xib in Resources */,
 				422AED401F2EC848008DF13D /* ProgramPerusahaanCell.xib in Resources */,
 				42BE9E861F2060AB0097A442 /* Assets.xcassets in Resources */,
+				42183C4A1F5A41650075F371 /* LeftMenuVC.xib in Resources */,
+				42A8BF621F36C97A0017152B /* AddTargetProgramVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,14 +668,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42463F951F22F6AD00CC0419 /* LeftMenuVC.m in Sources */,
 				42BE9EB31F2065090097A442 /* ProfileVC.m in Sources */,
+				42183C491F5A41650075F371 /* LeftMenuVC.m in Sources */,
 				42E9FB1B1F2DBD54002FDF35 /* ProgressAktifitasVC.m in Sources */,
 				4230C1221F28454100232F40 /* Dashboard.m in Sources */,
 				4295C91E1F280F5500880CE9 /* KCell.m in Sources */,
 				42E9FB171F2D9186002FDF35 /* ProgramPerusahaan.m in Sources */,
 				4230C11F1F283D3300232F40 /* DataService.m in Sources */,
 				42E9FB0A1F2D0CA7002FDF35 /* AuthService.m in Sources */,
+				42A8BF611F36C97A0017152B /* AddTargetProgramVC.m in Sources */,
 				42BE9E7B1F2060AB0097A442 /* AppDelegate.m in Sources */,
 				42A8BF5C1F369D430017152B /* EditProgramVC.m in Sources */,
 				42463FA41F238DA600CC0419 /* KomersialVC.m in Sources */,
@@ -667,6 +686,7 @@
 				422AED4B1F2ED12F008DF13D /* SquareButton.m in Sources */,
 				42463FAE1F24116100CC0419 /* TabVC.m in Sources */,
 				42E9FB231F2E24F6002FDF35 /* TargetProgramCell.m in Sources */,
+				42183C4D1F5A46BC0075F371 /* RoundedUIImageView.m in Sources */,
 				42BE9E781F2060AB0097A442 /* main.m in Sources */,
 				42463F9A1F238D2700CC0419 /* KualitasVC.m in Sources */,
 				422AED441F2ECBFF008DF13D /* AddProgramVC.m in Sources */,

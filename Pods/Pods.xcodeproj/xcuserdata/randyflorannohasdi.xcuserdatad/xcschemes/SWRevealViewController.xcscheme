@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '019D5F4AA9DE71EE29AD9FCB2C1E8027'
-               BlueprintName = 'LDProgressView'
+               BlueprintIdentifier = 'F492403B3E23D75DF95A85D6273DD4A1'
+               BlueprintName = 'SWRevealViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libLDProgressView.a'>
+               BuildableName = 'libSWRevealViewController.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
